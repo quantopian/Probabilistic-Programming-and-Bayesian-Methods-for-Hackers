@@ -11,21 +11,21 @@ subreddit  = reddit.get_subreddit( "crazyideas" )
 
 top_submissions = subreddit.get_top(limit=100)
 
-n_pic = int( sys.argv[1] ) if sys.argv[1] else 1
+n_sub = int( sys.argv[1] ) if sys.argv[1] else 1
 
-"""i = 0
-while i < n_pic:
+i = 0
+while i < n_sub:
     top_submission = next(top_submissions)
-    while "i.imgur.com" not in top_submission.url:
-        #make sure it is linking to an image, not a webpage.
-        top_submission = next(top_submissions)
+    #while "i.imgur.com" not in top_submission.url:
+    #    #make sure it is linking to an image, not a webpage.
+    #    top_submission = next(top_submissions)
     i+=1
 
-print("Title of submission: \n", top_submission.title)
-top_post_url = top_submission.url
+#print("Post contents: \n", top_submission.title)
+top_post = top_submission.title
 #top_submission.replace_more_comments(limit=5, threshold=0)
-print(top_post_url)
-"""
+#print(top_post_url)
+
 upvotes = []
 downvotes = []
 contents = []
