@@ -51,23 +51,3 @@ for sub in top_submissions:
     except Exception as e:
         continue
 votes = np.array( [ upvotes, downvotes] ).T
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
