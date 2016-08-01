@@ -9,7 +9,7 @@ import praw
 reddit = praw.Reddit("BayesianMethodsForHackers")
 subreddit  = reddit.get_subreddit( "crazyideas" )
 
-top_submissions = subreddit.get_top(limit=50)
+top_submissions = subreddit.get_top(limit=100)
 
 n_pic = int( sys.argv[1] ) if sys.argv[1] else 1
 
